@@ -1,12 +1,12 @@
-/*
 variable "aws_access_key" {
-  type = string
+  type    = string
+  default = ""
 }
 
 variable "aws_secret_key" {
-  type = string
+  type    = string
+  default = ""
 }
-*/
 
 variable "s3" {
   type = map(any)
