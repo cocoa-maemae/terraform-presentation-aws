@@ -1,5 +1,0 @@
-provider "google" {
-  region      = "asia-northeast1"
-  credentials = file(".credential.json")
-  project     = "my-terraform-prototype-for-gcp"
-}

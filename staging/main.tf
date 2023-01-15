@@ -10,11 +10,15 @@ terraform {
     hostname     = "app.terraform.io"
 
     workspaces {
-      name = "terraform-presentation"
+      name = "terraform-presentation-aws-staging"
     }
   }
 }
 
 module "s3" {
-  source = "./module/aws/s3"
+  source = "./../module/s3"
+}
+
+module "vpc" {
+  source = "./../module/vpc"
 }
