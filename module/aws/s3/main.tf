@@ -1,7 +1,7 @@
-resource "aws_s3_bucket" "test" {
-  bucket = "test-bucket"
+resource "aws_s3_bucket" "example" {
+  bucket = "example-bucket"
 
   tags = {
-    Name        = "My bucket"
+    Name        = "example bucket"
   }
 }
