@@ -1,5 +1,5 @@
 locals {
-  env = substr("${terraform.workspace}", 26, -1)
+  env = substr("${terraform.workspace}", 27, -1)
 }
 
 resource "aws_s3_bucket" "example" {
