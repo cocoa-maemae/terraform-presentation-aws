@@ -4,8 +4,9 @@ locals {
 
 resource "aws_s3_bucket" "example" {
   bucket = "example-bucket-${local.env}"
+  acl    = "public-read"
 
   tags = {
-    Name = "example bucket"
+    Name = "example bucket for ${local.env}"
   }
 }
