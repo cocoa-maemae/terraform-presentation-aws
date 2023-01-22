@@ -10,7 +10,7 @@ terraform {
     hostname     = "app.terraform.io"
 
     workspaces {
-      name = "terraform-presentation-aws-staging"
+      name = "terraform-presentation-aws-production"
     }
   }
 }
