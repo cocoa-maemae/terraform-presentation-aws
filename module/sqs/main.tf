@@ -2,7 +2,7 @@ locals {
   env = substr("${terraform.workspace}", 27, -1)
 }
 
-resource "aws_sqs_queue" "example"_sqs {
+resource "aws_sqs_queue" "example_sqs" {
   name                      = "example-queue-${local.env}"
   delay_seconds             = 60
   max_message_size          = 2048
