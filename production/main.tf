@@ -19,6 +19,6 @@ module "s3" {
   source = "../module/s3"
 }
 
-module "vpc" {
-  source = "../module/vpc"
+module "sqs" {
+  source = "./../module/sqs"
 }
